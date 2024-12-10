@@ -59,7 +59,7 @@ function Layout(props) {
 
 export default function App() {
   const base = import.meta.env.MODE === 'production' 
-  ? '/data_manager' 
+  ? '/news' 
   : '';
 
   return (
