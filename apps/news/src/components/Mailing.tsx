@@ -255,7 +255,9 @@ function Review(props: ReviewProps) {
         <Button variant="outlined" onClick={props.previousStep}>
           Previous
         </Button>
-        <Button onClick={handleSubmit} variant="contained">Next</Button>
+        <Button onClick={handleSubmit} variant="contained">
+          Next
+        </Button>
       </Box>
     </Paper>
   );
@@ -263,7 +265,7 @@ function Review(props: ReviewProps) {
 
 function MailingStatus() {
   return (
-      <Paper sx={{ p: 3 }}>
+    <Paper sx={{ p: 3 }}>
       <MainTitle>Mailing status</MainTitle>
       <SubTitle>Your mailing have been successfully registered.</SubTitle>
       <Button component={A} href="/">
@@ -273,7 +275,7 @@ function MailingStatus() {
   );
 }
 
-export default function Mailing() {
+export function Mailing() {
   const steps = ["Select Articles", "Personalize", "Review & Send"];
   const [currentStep, setCurrentStep] = createSignal(0);
 

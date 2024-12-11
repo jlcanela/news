@@ -1,0 +1,45 @@
+{
+    "topics": [ "news", "politics", "sports", "entertainment" ],
+    "articles": [
+        {
+            "topic": "news",
+            "title": "News Article 1",
+            "content": "This is the content of the first news article."
+        },
+        {
+            "topic": "news",
+            "title": "News Article 2",
+            "content": "This is the content of the second news article."
+        },
+        {
+            "topic": "politics",
+            "title": "Politics Article 1",
+            "content": "This is the content of the first politics article."
+        },
+        {
+            "topic": "politics",
+            "title": "Politics Article 2",
+            "content": "This is the content of the second politics article."
+        },
+        {
+            "topic": "sports",
+            "title": "Sports Article 1",
+            "content": "This is the content of the first sports article."
+        },
+        {
+            "topic": "sports",
+            "title": "Sports Article 2",
+            "content": "This is the content of the second sports article."
+        },
+        {
+            "topic": "entertainment",
+            "title": "Entertainment Article 1",
+            "content": "This is the content of the first entertainment article."
+        },
+        {
+            "topic": "entertainment",
+            "title": "Entertainment Article 2",
+            "content": "This is the content of the second entertainment article."
+        }
+    ]
+}
