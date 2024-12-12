@@ -1,33 +1,15 @@
-# `Turborepo` Vite starter
+# News
 
-This is an official starter Turborepo.
+News is a (fake) application to edit your news before mailing. 
 
-## Using this example
+View the [Demo](https://jlcanela.github.io/news/) on github pages.
 
-Run the following command:
+Data security: 
+- the application is hosted in github pages, there is no backend
 
-```sh
-npx create-turbo@latest -e with-vite
+# Run
+
+To run locally the application
 ```
-
-## What's inside?
-
-This Turborepo includes the following packages and apps:
-
-### Apps and Packages
-
-- `docs`: a vanilla [vite](https://vitejs.dev) ts app
-- `web`: another vanilla [vite](https://vitejs.dev) ts app
-- `@repo/ui`: a stub component & utility library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: shared `eslint` configurations
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+pnpm run dev
+```
