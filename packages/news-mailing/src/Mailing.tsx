@@ -268,7 +268,7 @@ interface MailingStatusProps {
       <Paper sx={{ p: 3 }}>
         <MainTitle>Mailing status</MainTitle>
         <SubTitle>Your mailing have been successfully registered.</SubTitle>
-        <Button onClick={props.goHome}>
+        <Button onClick={() => props.goHome()}>
           Go to Home
         </Button>
       </Paper>
