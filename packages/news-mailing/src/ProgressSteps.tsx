@@ -9,11 +9,6 @@ interface ProgressStepsProps {
 
 const ProgressSteps = (props: ProgressStepsProps) => {
 
-  const handleStepChange = (index: number) => {
-    if (props.disabled) return;
-    props.onStepChange?.(index);
-  };
-
   return (
     <Paper sx={{ p: 3, mb: 4 }}>
       <Box
@@ -29,7 +24,7 @@ const ProgressSteps = (props: ProgressStepsProps) => {
             <Button
               disabled={props.disabled}
               sx={{
-                bgcolor: props.activeStep >= index ? "primary.main" : "grey.300",
+                bgcolor: props.activeStep && props.activeStep >= index ? "primary.main" : "grey.300",
                 flex: 1,
                 position: "relative",
                 "&:not(:last-child)::after": {
@@ -39,7 +34,7 @@ const ProgressSteps = (props: ProgressStepsProps) => {
                   top: "50%",
                   width: 20,
                   height: 2,
-                  bgcolor: props.activeStep > index ? "primary.main" : "grey.300",
+                  bgcolor: props.activeStep && props.activeStep > index ? "primary.main" : "grey.300",
                   transform: "translateY(-50%)",
                 },
               }}

@@ -32,9 +32,6 @@ export function MainTitle({
 
 export function SubTitle({
   children,
-  align = "center",
-  color = "primary.main",
-  gutterBottom = true,
 }: TitleProps) {
   return (
     <Typography

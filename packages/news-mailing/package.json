@@ -1,0 +1,60 @@
+{
+    "name": "@repo/news-mailing",
+    "version": "0.0.4",
+    "private": false,
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "exports": {
+      ".": {
+        "import": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        },
+        "require": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.cjs"
+        }
+      },
+      "./style.css": "./dist/news-mailing.css"
+    },
+    "scripts": {
+      "build": "tsc && vite build",
+      "lint": "eslint \"**/*.ts\"",
+      "start": "vite"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jlcanela/news"
+    },
+    "peerDependencies": {
+      "solid-js": "^1.9.3",
+      "@suid/icons-material": "^0.8.1",
+      "@suid/material": "^0.18.0"
+    },
+    "dependencies": {
+      "@solidjs/router": "^0.15.1",
+      "@suid/icons-material": "^0.8.1",
+      "@suid/material": "^0.18.0",
+      "showdown": "^2.1.0",
+      "solid-icons": "^1.1.0",
+      "solid-js": "^1.9.3",
+      "solid-markdown": "^2.0.14"
+    },
+    "devDependencies": {
+      "@suid/vite-plugin": "*",
+      "@types/showdown": "^2.0.6",
+      "typescript": "^4.8.2",
+      "vite": "^6.0.3",
+      "vite-plugin-dts": "^4.3.0",
+      "vite-plugin-solid": "^2.11.0"
+    }
+  }
+  

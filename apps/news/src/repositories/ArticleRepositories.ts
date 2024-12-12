@@ -1,12 +1,4 @@
-export interface Topic {
-    name: string;
-}
-
-export interface Article {
-    title: string;
-    content: string;
-    topic: Topic;
-}
+import type {Article, Topic} from "@repo/news-mailing";
 
 export class ArticleRepository {
 

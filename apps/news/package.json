@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build": "vite build",
+    "dev": "vite --clearScreen false",
     "start": "vite"
   },
   "dependencies": {
+    "@repo/news-mailing": "workspace:*",
     "@solidjs/router": "^0.15.1",
     "@suid/icons-material": "^0.8.1",
     "@suid/material": "^0.18.0",
@@ -16,8 +18,8 @@
     "solid-markdown": "^2.0.14"
   },
   "devDependencies": {
-    "@suid/vite-plugin": "*",
-    "typescript": "^4.8.2",
+    "@suid/vite-plugin": "^0.3.1",
+    "typescript": "^4.9.5",
     "vite": "^6.0.3",
     "vite-plugin-solid": "^2.11.0"
   }
