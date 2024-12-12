@@ -1,4 +1,4 @@
-import type {Article, Topic} from "@repo/news-mailing";
+import type {Article, Topic} from "@jlcanela/news-mailing";
 
 export class ArticleRepository {
 

@@ -20,7 +20,7 @@ importers:
 
   apps/news:
     dependencies:
-      '@repo/news-mailing':
+      '@jlcanela/news-mailing':
         specifier: workspace:*
         version: link:../../packages/news-mailing
       '@solidjs/router':

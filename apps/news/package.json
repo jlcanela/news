@@ -8,7 +8,7 @@
     "start": "vite"
   },
   "dependencies": {
-    "@repo/news-mailing": "workspace:*",
+    "@jlcanela/news-mailing": "workspace:*",
     "@solidjs/router": "^0.15.1",
     "@suid/icons-material": "^0.8.1",
     "@suid/material": "^0.18.0",

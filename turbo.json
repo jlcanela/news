@@ -8,7 +8,7 @@
     },
     "lint": {},
     "dev": {
-      "dependsOn": ["@repo/news-mailing#build"],
+      "dependsOn": ["@jlcanela/news-mailing#build"],
       "persistent": true,
       "cache": false
     }
