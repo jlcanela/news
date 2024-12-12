@@ -2,7 +2,7 @@ import type {Article, Topic} from "@jlcanela/news-mailing";
 
 export class ArticleRepository {
 
-    public async getArticles(topic?: Topic): Promise<Article[]> {
+    public async getArticles(topic: Topic): Promise<Article[]> {
         return [
             {
                 title: "Article 1",

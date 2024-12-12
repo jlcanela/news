@@ -1,7 +1,7 @@
 /* @refresh reload */
 
 import Home from "./pages/Home";
-import { Route, Router } from "@solidjs/router";
+import { Route, RouteDefinition, Router } from "@solidjs/router";
 
 import { Box } from "@suid/material";
 import { Header } from "./components/Header";
@@ -36,12 +36,12 @@ const theme = createTheme({
 import { ThemeProvider } from "@suid/material/styles";
 import News from "./pages/News";
 import Mailing from "./pages/Mailing";
-// import DatabaseExplorer from "./pages/DatabaseExplorer";
-// import JsonViewerPage from "./pages/JsonViewerPage";
-// import FileExplorer from "./pages/FileExplorer";
-// import JsonSchema from "./pages/JsonSchema";
+import MailingRemote from "./pages/MailingRemote";
+import { JSX } from "solid-js";
+//import MailingRemote from "./pages/MailingRemote";
 
-function Layout(props) {
+
+function Layout(props: any) {
   return (
     <>
       <Header />
@@ -68,11 +68,7 @@ export default function App() {
           <Route path="/" component={Home} />   
           <Route path="/news" component={News} />    
           <Route path="/mailing" component={Mailing} />
-          {/* <Route path="/business-editor" component={BusinessEditor} />
-          <Route path="/database-explorer" component={DatabaseExplorer} />
-          <Route path="/structure-editor" component={JsonViewerPage} />
-          <Route path="/file-explorer" component={FileExplorer} />
-          <Route path="/json-schema" component={JsonSchema} /> */}
+          <Route path="/mailing-remote" component={MailingRemote} />
         </Router>
     </ThemeProvider>
   );

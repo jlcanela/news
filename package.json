@@ -3,6 +3,7 @@
   "scripts": {
     "build": "turbo build",
     "package-news": "turbo build --filter=\"news\"",
+    "mailing-remote": "turbo dev --filter=\"@repo/shared-components\"",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
@@ -12,6 +13,6 @@
     "prettier": "^3.2.5",
     "turbo": "^2.3.3"
   },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@8.15.9",
   "name": "with-vite"
 }

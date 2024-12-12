@@ -16,7 +16,7 @@
         "moduleResolution": "Node",
         "outDir": "./dist",
       },
-      "include": ["src"],
+      "include": ["src", "vite.config.ts"],
       "exclude": ["node_modules"]
   }
   
