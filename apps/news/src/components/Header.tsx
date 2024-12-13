@@ -48,7 +48,7 @@ export function Header() {
   const navItems = [
     { href: "/news", label: "News" },
     { href: "/mailing", label: "Mailing" },
-    { href: "/mailing-remote", label: "MailingRemote" },
+    { href: "/mailing-remote", label: "Mailing-Remote" },
   
   ];
   
